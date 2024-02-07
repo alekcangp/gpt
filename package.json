@@ -1,17 +1,17 @@
 {
   "dependencies": {
-    "node-telegram-bot-api": "^0.64.0",
-    "openai": "^4.26.0"
+    "openai": "^4.26.0",
+    "telegraf": "^4.15.3"
   },
   "name": "root",
   "version": "1.0.0",
   "main": "chat.mjs",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {},
   "description": ""
 }

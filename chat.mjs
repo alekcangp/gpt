@@ -21,10 +21,10 @@ const bot = new Telegraf(token)
 
 //const chatids = {};
 
-const data = fs.readFileSync('mas.txt',
-    { encoding: 'utf8', flag: 'r' });
+//const data = fs.readFileSync('mas.txt',
+//    { encoding: 'utf8', flag: 'r' });
 
-const mas = JSON.parse(data);
+const mas = [];//JSON.parse(data);
 mas.splice(0,mas.length-10)
 // Listen for any kind of message. There are different kinds of
 // messages.
@@ -90,7 +90,7 @@ try {
   mas.push({"role": "assistant","content": resp});
   mas.splice(0,mas.length-10)
 
-  fs.writeFileSync('mas.txt', JSON.stringify(mas));
+//  fs.writeFileSync('mas.txt', JSON.stringify(mas));
 } catch (e) {await ctx.telegram.sendMessage(chatId, "Ой! Я что-то пропустил мимо ушей."); mas.splice(0,mas.length-1)}
   //chatids.chatId = mas;
 
